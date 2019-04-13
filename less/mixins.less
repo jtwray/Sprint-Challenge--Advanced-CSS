@@ -1,5 +1,5 @@
 // Mixins Here 
-.btn-parametric(@buttonfontcolor,@width,@button-bg) {
+.btn-parametric(@buttonfontcolor:@buttonfontcolor;@width:@width;@button-bg:@button-bg;) {
     color:@buttonfontcolor;
     width:@width;
     background-color: @button-bg;
@@ -13,4 +13,16 @@
     
  }
 
- 
+ .flex-align(@justify: center; @align: center; @dir: row) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @dir;
+}
+
+.margin(@TBmargin:@smargin;@LRmargin:smargin;){
+    margin-top: @TBmargin;
+    margin-bottom: @TBargin;
+    margin-left: @LRargin;
+    margin-right: @LRargin;
+}
