@@ -298,7 +298,7 @@ footer {
   align-items: center;
   font-size: 1.6rem;
 }
-.home .walk .walk-text .btn :hover {
+.home .walk .walk-text .btn:hover {
   background-color: #F6F7F8;
   color: #22283A;
 }
