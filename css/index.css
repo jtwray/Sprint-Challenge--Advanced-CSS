@@ -182,7 +182,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    /* width: 50%; */
+    width: 100%;
     font-size: 1.6rem;
     margin: 1.5rem auto 0.5rem auto;
   }
@@ -213,6 +213,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  width: 100%;
 }
 .home .space-images {
   display: flex;
@@ -274,7 +277,7 @@ footer {
 }
 @media (max-width:500px) {
   .home .walk .walk-text {
-    color: #F6F7F8;
+    color: #5E6164;
     width: 100%;
   }
 }
