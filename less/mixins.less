@@ -1,1 +1,14 @@
 // Mixins Here
+.align-flex(@dir:row;@justify:center;@align:center){
+    flex-direction:@dir;
+    justify-content: @justify;
+    align-items: @align;
+    display: flex;
+}
+
+.margin(@top:@sm;@right:@sm;@bottom:@sm;@left:@sm;){
+    top:@top;
+    right:@right;
+    bottom:@bottom;
+    left:@right;
+}
