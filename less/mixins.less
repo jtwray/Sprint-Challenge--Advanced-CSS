@@ -1,1 +1,30 @@
-// Mixins Here
+// Mixins Here 
+.btn-parametric(@buttonfontcolor:@buttonfontcolor;@width:@width;@button-bg:@button-bg;) {
+    color:@buttonfontcolor;
+    width:@width;
+    background-color: @button-bg;
+    border-radius: 12%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    
+    
+ }
+
+ .flex-align(@justify: center; @align: center; @dir: row) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @dir;
+}
+
+.margin(@Tmargin:@nomargin;@Rmargin:@nomargin;@Bmargin:@nomargin;@Lmargin:nomargin;){
+    margin-top: @Tmargin;
+    margin-right: @Rmargin;
+    margin-bottom: @Bmargin;
+    margin-left: @Lmargin;
+}
+
+

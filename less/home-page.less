@@ -3,27 +3,42 @@
 .home {
 
   .intro {
-
+    
     h2 {
       padding: 15px;
     }
-
+    
     p {
       padding:0 15px;
     }
-  
+    img{
+      width:100%;
+    }
+    
   }
-
+  
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    
+    @media @phone {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            .flex-align(@dir:column);
+          }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone{
+        width: 100%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+      }
     }
   }
 
@@ -38,38 +53,82 @@
       margin-top: 13px;
     }
   }
-
+  
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    
+      @media @phone{
+        // margin-top: 60px;
+        border-top: 1px solid #dee2e6;
+        padding: 5px 6px;
+        display: flex;
+        justify-content: center;
+        .flex-align(@dir:column-reverse);
+      }
+    
     .walk-text {
       width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
+      @media @phone{
+        color: @shuttle-gray;
+        width: 100%;
       }
 
+      h3 {
+        .margin(@Bmargin:@smargin;);
+      }
+      
       p {
         margin-bottom: 26px;
       }
 
       .btn {
+  
+        .btn-parametric(@buttonfontcolor:@porcelain;@width:@width;@button-bg: @btn-bg-color;)
+        
+        
       }
+      .btn:hover{
+          background-color:@porcelain;
+          color:@btn-bg-color;
+        }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone{
+        width:100%;
+        margin:0%;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        .sky  {
+            @media @phone{ 
+            display: none;
+          }
+        }
+         .launch {
+            @media @phone{
+            display: none;
+          }
+        @media @phone{ 
+          width: 100%; 
+          /* height: auto; */
+          border-radius: 10px;
+        }
+
       }
     }
   }
 }// home
+
+}
+@media@phone{
+  img.sky,img.launch{display:none;}}

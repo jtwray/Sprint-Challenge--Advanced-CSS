@@ -34,13 +34,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+	Repsonsive units is the main difference between an adaptive vs a fully responsive website. Adaptive websites use layout widths hardcoded at each media query and generally provide styling for fewer specific devices, where a fully Responsive page will incorporate responsive units that accomodate thousands of device sizes. Responsive sites take longer to build and require more effort than Adaptive websites. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+
+	Mobile first designs for the mobile size first, incorporating all the features and functionality desired
+ for the webpage to be available on the the mobile design. Then the layout is adjusted at each screen size at through tablet and desktop as the resolution increases
+ to make us of and accomodate increasing screen, thinking of white space keeping priority of content in proper order.
+ 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    It allows the units to have a function of 10. one rem =10px 1.6rem is 16 px
+Using this percentage based size with rem helps in case someone increases their font size in the browser setting vs just hardcoding font-size 10px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way to orgazie your css into smaller files to aid in readibility and comprehension for yourself and people that have to look at your work at a later time.
+Preprocessing helps you maintain order of specificity and follow the basic structure of your html with your css. Also the compiler will show you errors when you are coding to save you time and trouble.
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept is the compiler error function. the changes wont go into effect and it  tells what line the error is on. I really like that it tells what line.
+The most trouble i had was forgetting to put the meta tag for viewport in the header or trying to be too complicated with the parametric mixins. Theyre just fancy classes with variables or key:order pairs.
+I was trying to use them stacked inside each other level,on level, on level silmilar to a callback function in javascript, rather than understanding the Parameter/argument idea of parametric functions. 
+When i figured out I was overdoing it , they kind of fell into place. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

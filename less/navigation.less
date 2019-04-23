@@ -1,1 +1,36 @@
-// Navigation code here
+
+.top{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin:1rem auto;
+}
+    
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 50%;
+    font-size: 1.6rem;
+    margin: 1.5rem auto .5rem auto;
+    @media @phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%; 
+        font-size: 1.6rem;
+        margin: 1.5rem auto 0.5rem auto;
+    }
+a{
+    text-decoration: none;
+    color: black;
+    @media @phone {
+        text-decoration: none;
+        color: black;
+        margin: 0 1rem;
+    }
+}
+}
+
+
