@@ -167,7 +167,7 @@ p {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
+  padding: 1rem;
 }
 nav {
   display: flex;
@@ -177,25 +177,27 @@ nav {
   font-size: 1.6rem;
   margin: 1.5rem auto 0.5rem auto;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 100%;
-    font-size: 1.6rem;
-    margin: 1.5rem auto 0.5rem auto;
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
   }
 }
 nav a {
   text-decoration: none;
   color: black;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   nav a {
     text-decoration: none;
     color: black;
-    margin: 0 1rem;
+    margin: 0;
   }
 }
 footer {
@@ -211,135 +213,198 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .intro h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+  }
+}
 .home .intro p {
   padding: 0 15px;
 }
-.home .intro img {
-  width: 100%;
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
 }
-.home .space-images {
+.home .intro p img {
+  width: 100%;
+  border-radius: 5px;
+}
+.home .intro .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-@media (max-width:500px) {
-  .home .space-images {
-    flex-wrap: wrap;
-    width: 100%;
+@media (max-width: 500px) {
+  .home .intro .space-images {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 1.5rem;
   }
 }
-.home .space-images img {
+.home .intro .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-@media (max-width:500px) {
-  .home .space-images img {
+@media (max-width: 500px) {
+  .home .intro .space-images img {
     width: 100%;
-    margin: 20px 2.5%;
     border-radius: 20px;
-    height: 100%;
+    margin: 0;
   }
 }
-.home .visit-planets {
-  padding: 15px;
+.home .intro .visit-planets {
+  padding: 1.5rem;
 }
-.home .visit-planets h3 {
+.home .intro .visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+@media (max-width: 500px) {
+  .home .intro .visit-planets h3 {
+    margin-top: 0;
+  }
+}
+.home .intro .visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+@media (max-width: 500px) {
+  .home .intro .visit-planets p {
+    margin: 1.5rem 0;
+  }
+}
+.home .intro .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-@media (max-width:500px) {
-  .home .walk {
+@media (max-width: 500px) {
+  .home .intro .walk {
     border-top: 1px solid #dee2e6;
-    padding: 5px 6px;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
+    margin: auto;
   }
 }
-.home .walk .walk-text {
+.home .intro .walk .walk-text {
   width: 50%;
 }
-@media (max-width:500px) {
-  .home .walk .walk-text {
+@media (max-width: 500px) {
+  .home .intro .walk .walk-text {
     color: #5E6164;
     width: 100%;
+    padding: 1.5rem 0 0;
   }
 }
-.home .walk .walk-text h3 {
+.home .intro .walk .walk-text h3 {
   margin-top: 0rem;
   margin-right: 0rem;
   margin-bottom: 1rem;
-  margin-left: nomargin;
+  margin-left: 0rem;
+  font-size: 2.3rem;
 }
-.home .walk .walk-text p {
+@media (max-width: 500px) {
+  .home .intro .walk .walk-text h3 {
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+  }
+}
+.home .intro .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+@media (max-width: 500px) {
+  .home .intro .walk .walk-text p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 1.5rem 0;
+  }
+}
+.home .intro .walk .walk-text .btn {
   color: #F6F7F8;
   width: 10rem;
   background-color: #22283A;
-  border-radius: 12%;
+  border-radius: 5px;
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
 }
-.home .walk .walk-text .btn:hover {
-  background-color: #F6F7F8;
-  color: #22283A;
+@media (max-width: 500px) {
+  .home .intro .walk .walk-text .btn {
+    color: #F6F6F6;
+    width: 100%;
+    background-color: #22283A;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 2rem;
+  }
 }
-.home .walk .walk-img {
+.home .intro .walk .walk-text .btn:hover {
+  color: #22283A;
+  width: 10rem;
+  background-color: #F6F7F8;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.home .intro .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-@media (max-width:500px) {
-  .home .walk .walk-img {
+@media (max-width: 500px) {
+  .home .intro .walk .walk-img {
     width: 100%;
     margin: 0%;
   }
 }
-.home .walk .walk-img img {
+.home .intro .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-@media (max-width:500px) {
-  .home .walk .walk-img img .sky {
+@media (max-width: 500px) {
+  .home .intro .walk .walk-img img .sky {
     display: none;
   }
 }
-@media (max-width:500px) {
-  .home .walk .walk-img img .launch {
+@media (max-width: 500px) {
+  .home .intro .walk .walk-img img .launch {
     display: none;
   }
 }
-@media (max-width:500px) {
-  .home .walk .walk-img img .launch {
+@media (max-width: 500px) {
+  .home .intro .walk .walk-img img .launch {
     width: 100%;
     /* height: auto; */
-    border-radius: 10px;
+    border-radius: 5px;
   }
 }
-@media (max-width:500px) {
-  img.sky,
-  img.launch {
+@media (max-width: 500px) {
+  .home img.sky,
+  .home img.launch {
     display: none;
   }
 }

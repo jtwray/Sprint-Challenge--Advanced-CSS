@@ -1,5 +1,5 @@
-// Mixins Here 
-.btn-parametric(@buttonfontcolor:@footer-background;@width:@width;@button-bg:@btn-bg-color;) {
+// Mixins Here
+.btn-parametric(@buttonfontcolor:@footer-background, @width:@width, @button-bg:@btn-bg-color) {
     color:@buttonfontcolor;
     width:@width;
     background-color: @button-bg;
@@ -9,11 +9,11 @@
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    
-    
+
+
  }
 
-.flex-align(@justify: center; @align: center; @dir: row) {
+.flex-align(@justify: center, @align: center, @dir: row) {
     display: flex;
     justify-content: @justify;
     align-items: @align;
@@ -26,7 +26,7 @@
 // @medmargin: 2rem;
 // @lmargin:   3rem;
 // @xlmargin:  4rem;
-.margin(@Tmargin:@nomargin;@Rmargin:@nomargin;@Bmargin:@nomargin;@Lmargin:@nomargin;){
+.margin(@Tmargin:@nomargin, @Rmargin:@nomargin, @Bmargin:@nomargin, @Lmargin:@nomargin){
     margin-top: @Tmargin;
     margin-right: @Rmargin;
     margin-bottom: @Bmargin;
