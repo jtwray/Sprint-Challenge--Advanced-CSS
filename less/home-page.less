@@ -6,13 +6,22 @@
     
     h2 {
       padding: 15px;
-    }
+      @media @phone{
+             font-size: 2.6rem;
+             font-weight: 600;}
+            }
     
     p {
-      padding:0 15px;
-    }
+      padding: 0 15px;
+      @media @phone {
+             padding: 1.5rem;
+             font-size: 1.3rem;
+             font-weight: 600;
+             line-height: 1.4;
+            }
     img{
-      width:100%;
+      width: 100%;
+      border-radius: 5px;
     }
     
   }
@@ -23,34 +32,35 @@
     width: 100%;
     
     @media @phone {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
             .flex-align(@dir:column);
-          }
+            padding: 1.5rem;
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
       @media @phone{
-        width: 100%;
-        margin: 20px 2.5%;
-        border-radius: 20px;
-        height: 100%;
+             width: 100%;
+             border-radius: 20px;
+             margin: 0;
       }
     }
   }
 
   .visit-planets {
-    padding: 15px;
-
+    padding: 1.5rem;
     h3 {
       margin-top: 11px;
+      @media @phone{
+             margin-top: 0;
+      }
     }
-
     p {
       margin-top: 13px;
+            @media @phone{
+                   margin: 1.5rem 0;
+      }
     }
   }
   
@@ -62,38 +72,48 @@
     justify-content: center;
     
       @media @phone{
-        // margin-top: 60px;
-        border-top: 1px solid #dee2e6;
-        padding: 5px 6px;
-        display: flex;
-        justify-content: center;
-        .flex-align(@dir:column-reverse);
+             border-top: 1px solid #dee2e6;
+             padding: 1.5rem;
+             .flex-align(@dir:column-reverse);
+             margin: auto;
       }
     
     .walk-text {
       width: 50%;
       @media @phone{
-        color: @shuttle-gray;
-        width: 100%;
+             color: @shuttle-gray;
+             width: 100%;
+             padding: 1.5rem 0 0;
       }
 
       h3 {
         .margin(@Bmargin:@smargin;);
+        font-size: 2.3rem;
+        @media @phone{
+               .margin();
+        }
       }
       
       p {
         margin-bottom: 26px;
+        @media @phone{
+                   font-size: 1.3rem;
+                   line-height: 1.4;
+                   font-weight: 600;
+                   margin: 1.5rem 0;
+        }
       }
 
       .btn {
   
-        .btn-parametric(@buttonfontcolor:@porcelain;@width:@width;@button-bg: @btn-bg-color;)
-        
-        
+        .btn-parametric(@buttonfontcolor:@porcelain;@width:@width;)
+        @media @phone{
+                 .btn-parametric(@width:100%;)    
+                 padding: 2rem;
+        }        
       }
-      .btn:hover{
-          background-color:@porcelain;
-          color:@btn-bg-color;
+      .btn:hover{     
+        .btn-parametric(@buttonfontcolor:@btn-bg-color;@button-bg:@porcelain;)  
         }
     }
 
@@ -121,7 +141,7 @@
         @media @phone{ 
           width: 100%; 
           /* height: auto; */
-          border-radius: 10px;
+          border-radius: 5px;
         }
 
       }
